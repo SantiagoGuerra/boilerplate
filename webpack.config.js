@@ -5,6 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
+  optimization: {
+    minimizer: [new UglifyJsPlugin({
+      test: /\.js(\?.*)?$/i,
+    })],
+  },
   devtool: 'source-map',
   entry: './src/index.js',
   output: {
@@ -34,11 +39,6 @@ const config = {
         ],
       },
     ],
-    optimization: {
-      minimizer: [new UglifyJsPlugin({
-        test: /\.js(\?.*)?$/i,
-      })],
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({

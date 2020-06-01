@@ -4,7 +4,8 @@
   "description": "<!--\r *** Thanks for checking out this README Template. If you have a suggestion that would\r *** make this better, please fork the repo and create a pull request or simply open\r *** an issue with the tag \"enhancement\".\r *** Thanks again! Now go create something AMAZING! :D\r -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "eslint-plugin-import": "^2.20.2",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.0",
